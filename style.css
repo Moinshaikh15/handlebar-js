@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+  font-family: "Poppins", sans-serif;
+  background-image: url("bg.jpeg");
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.089),
+      rgba(7, 7, 7, 0.915)
+    ),
+    url("bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+h1 > span {
+  color: rgb(109, 244, 56);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  align-items: center;
+}
+
+.menu-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.menu {
+  list-style: none;
+  color: rgb(243, 243, 243);
+
+  text-align: center;
+}
+li{
+    margin-bottom: 20px;
+}

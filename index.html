@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sample Vanilla Js Website with <span>handlebars</span> </h1>
+    <script id="myHandlebarSection" type="text/x-handlebars-template">
+        <div class="main">
+            <h2>Welcome To {{name}}</h2>
+
+            <div class="menu-main">
+                <h4>MENU</h4>
+                <ul class="menu">
+                    {{#each menu}}
+                      <li>{{this}}</li>
+                    {{/each}}
+                  </ul>
+            </div>
+            
+        </div>
+       
+ </script>
+    <div id="htmlSelection">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
